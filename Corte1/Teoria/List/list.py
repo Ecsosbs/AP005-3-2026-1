@@ -69,7 +69,7 @@ print(tupla_personajes_op.count('Luffy'))  #cuantas veces aparece
 tupla_personajes_op_unitaria = ('Robin')
 print(tupla_personajes_op_unitaria)
 
-tupla_personajes_op = 'Marlon', 26, 04, 1999 #tupla sin parentesis
+tupla_personajes_op = 'Marlon', 26, 4, 1999 #tupla sin parentesis
 print(tupla_personajes_op)
 
 nombre,dia,mes,año = tupla_personajes_op
