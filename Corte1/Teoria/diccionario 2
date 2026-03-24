@@ -1,0 +1,113 @@
+# #### Get A Key
+# puedes acceder a valores usando la clave
+
+# recompensas = {"Luffy": 3000, "Zoro": 1110, "Sanji": 1032, "Law": 3000, "Kid": 3000, "Shanks": 4000}
+# print(recompensas["Luffy"])
+# print(recompensas["Law"])
+
+# frutas = {"paramecia": ["Luffy", "Buggy", "Law"], "logia": ["Ace", "Smoker", "Enel"], "zoan": ["Chopper", "Kaido", "Marco"]}
+# print(frutas["zoan"])
+# print(frutas["logia"])
+
+# ## Get an Invalid Key
+
+# recompensas = {"Luffy": 3000, "Zoro": 1110, "Sanji": 1032, "Law": 3000, "Kid": 3000, "Shanks": 4000}
+# print(recompensas["Nami"])  # ERROR
+
+# key_to_check = "Nami"
+
+# if key_to_check in recompensas:
+#   print(recompensas["Nami"])
+
+# frutas = {"paramecia": ["Luffy", "Buggy", "Law"], "logia": ["Ace", "Smoker", "Enel"], "zoan": ["Chopper", "Kaido", "Marco"]}
+
+# frutas["especial"] = "No es una fruta oficial"
+
+# if "especial" in frutas:
+#   print(frutas["especial"])
+
+# ## Safely Get a Key
+# recompensas = {"Luffy": 3000, "Zoro": 1110, "Sanji": 1032, "Law": 3000, "Kid": 3000, "Shanks": 4000}
+
+# recompensas.get("Zoro")
+# recompensas.get("Nami")
+
+# ###
+# tripulacion_ids = {"Luffy": 100019, "Zoro": 182921, "Sanji": 123112, "Nami": 102931, "Usopp": 129384}
+
+# if tripulacion_ids.get("Luffy") == None:
+#    luffy_id = 1000
+# else: 
+#    luffy_id = tripulacion_ids.get("Luffy")
+
+# print(luffy_id)
+
+# if tripulacion_ids.get("Robin") == None:
+#      robin_id = 100000
+
+# print(robin_id)
+
+# ### Delete a Key
+
+# recompensas = {223842: "Luffy", 872921: "Zoro", 320291: "Sanji", 412123: "Nami", 298787: "Usopp"}
+
+# print(recompensas.pop(320291, "Sin recompensa"))
+# print(recompensas)
+
+# print(recompensas.pop(999999, "Sin recompensa"))
+# print(recompensas)
+
+# print(recompensas.pop(872921, "Sin recompensa"))
+# print(recompensas)
+
+# inventario = {"carne": 10, "sake": 5, "fruta": 20, "sandwich": 25, "arroz": 15, "sopa": 30}
+# energia = 20
+
+# energia += inventario.pop("arroz", 0)
+# energia += inventario.pop("sopa", 0)
+# energia += inventario.pop("pan magico", 0)
+
+# print(inventario)
+# print(energia)
+
+# ## Get All Keys
+# tripulacion = {"Nami":[80, 72, 90], "Zoro":[88, 68, 81], "Sanji":[80, 82, 84], "Luffy":[98, 96, 95]}
+
+# print(list(tripulacion))
+
+# for personaje in tripulacion.keys():
+#  print(personaje)
+
+# tripulacion_ids = {"Luffy": 100019, "Zoro": 182921}
+# misiones = {"pelea": 10, "exploracion": 13, "entrenamiento": 15}
+
+# usuarios = tripulacion_ids.keys()
+# tareas = misiones.keys()
+
+# print(usuarios)
+# print(tareas)
+
+## Get All Values
+# tripulacion = {"Nami":[80, 72, 90], "Zoro":[88, 68, 81], "Sanji":[80, 82, 84], "Luffy":[98, 96, 95]}
+
+# for habilidades in tripulacion.values():
+#  print(habilidades)
+
+# misiones = {"pelea": 10, "exploracion": 13, "entrenamiento": 15}
+
+# total = 0
+
+# for puntos in misiones.values():
+#   total += puntos
+# print(total)
+
+## Get All Items
+# recompensas = {"Luffy": 3000, "Zoro": 1110, "Sanji": 1032}
+
+# for personaje, valor in recompensas.items():
+#  print(personaje + " tiene recompensa de " + str(valor) + " millones")
+
+# roles = {"Capitan": 28, "Espadachin": 9, "Doctor": 58}
+
+# for rol, porcentaje in roles.items():
+#   print("El " + str(porcentaje) + "% pertenece al rol de " + rol)
