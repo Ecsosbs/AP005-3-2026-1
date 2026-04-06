@@ -2,7 +2,7 @@ import serial
 import serial.tools.list_ports
 import time
 
-puerto = "COM3"  # Ajustar según tu equipo
+puerto = "COM3"  
 baudrate = 115200
 
 print("Puertos disponibles:")
