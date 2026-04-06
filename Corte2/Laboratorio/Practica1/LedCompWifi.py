@@ -1,6 +1,6 @@
 import socket
 
-IP_ESP32 = "192.168.1.37"  # CAMBIA ESTA IP
+IP_ESP32 = "192.168.1.37" 
 PUERTO = 3333
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
